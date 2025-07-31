@@ -1,5 +1,3 @@
-// Use global variables from content.js
-
 function injectControlPanel() {
   if (document.getElementById("autoapply-control-panel")) return;
   const panel = document.createElement("div");
@@ -189,7 +187,24 @@ function injectControlPanel() {
   };
   panel.appendChild(pauseBtn);
 
-  // Resume button (optional, but Pause/Resume toggle is enough)
+  // Spacebar toggles pause/resume
+  window.addEventListener("keydown", function (e) {
+    if (
+      document.getElementById("autoapply-control-panel") &&
+      e.code === "Space" &&
+      !e.repeat &&
+      document.activeElement.tagName !== "INPUT" &&
+      document.activeElement.tagName !== "TEXTAREA"
+    ) {
+      isPaused = !isPaused;
+      pauseBtn.textContent = isPaused ? "Resume" : "Pause";
+      if (!isPaused) {
+        if (autoApplyInterval) clearInterval(autoApplyInterval);
+        autoApply();
+      }
+      e.preventDefault();
+    }
+  });
 
   // Close (cross) button
   const closeBtn = document.createElement("button");
