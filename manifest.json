@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Easy Apply AutoApply by Kritika Adhikari",
+  "version": "1.0.0",
+  "description": "Automatically applies to LinkedIn Easy Apply job postings.",
+  "permissions": ["scripting", "storage", "activeTab"],
+  "host_permissions": ["https://www.linkedin.com/jobs/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "logo.svg",
+    "32": "logo.svg",
+    "48": "logo.svg",
+    "128": "logo.svg"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/jobs/*"],
+      "js": ["controlPanel.js", "content.js"]
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LinkedIn AutoApply</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        width: 270px;
+        padding: 18px 16px;
+        background: linear-gradient(135deg, #f8fafc 60%, #e3e7ed 100%);
+        border-radius: 16px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        color: #222;
+      }
+      h2 {
+        font-size: 1.3em;
+        margin-bottom: 8px;
+        color: #0073b1;
+        font-weight: 600;
+      }
+      p {
+        font-size: 0.95em;
+        margin-bottom: 18px;
+        color: #444;
+        word-break: break-all;
+      }
+      button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px 0;
+        font-size: 1em;
+        border: none;
+        border-radius: 8px;
+        background: #0073b1;
+        color: #fff;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.2s, box-shadow 0.2s;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+      }
+      button:hover {
+        background: #005983;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      #refreshBtn {
+        background: #e3e7ed;
+        color: #0073b1;
+        margin-top: 8px;
+      }
+      #refreshBtn:hover {
+        background: #cfd8e3;
+        color: #005983;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px"
+    >
+      <h2 style="font-size: 1.3em; color: #0073b1; font-weight: 600; margin: 0">
+        AutoApply by Kritika Adhikari Settings
+      </h2>
+      <a
+        href="https://www.linkedin.com/in/kritikaadhikari/"
+        target="_blank"
+        title="Connect on LinkedIn"
+        style="
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 28px;
+          height: 28px;
+          border-radius: 6px;
+          background: #e3e7ed;
+          transition: background 0.2s;
+          margin-left: 2px;
+          cursor: pointer;
+          border: none;
+          text-decoration: none;
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="22"
+          height="22"
+          viewBox="0 0 48 48"
+        >
+          <path
+            fill="#0288D1"
+            d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"
+          ></path>
+          <path
+            fill="#FFF"
+            d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"
+          ></path>
+        </svg>
+      </a>
+      <a
+        href="https://kritikaadhikari.com.np"
+        target="_blank"
+        title="Visit Website"
+        style="
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 28px;
+          height: 28px;
+          border-radius: 6px;
+          background: #e3e7ed;
+          transition: background 0.2s;
+          margin-left: 2px;
+          cursor: pointer;
+          border: none;
+          text-decoration: none;
+        "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="22"
+          height="22"
+          viewBox="0 0 120 120"
+        >
+          <path
+            d="M112.313,90.466l-9.174-5.406C106.249,78.701,108,71.556,108,64c0-26.51-21.49-48-48-48 S12,37.49,12,64c0,26.51,21.49,48,48,48c9.74,0,18.796-2.909,26.364-7.895l0.412,3.475l6.674-8.95l8.792,13.37l7.807-5.134 l-8.792-13.37L112.313,90.466z"
+            opacity=".35"
+          ></path>
+          <circle cx="60" cy="60" r="48" fill="#0075ff"></circle>
+          <path
+            d="M60,22c6.609,0,14,17.961,14,42h6c0-23.269-7.009-48-20-48S40,40.731,40,64h6 C46,39.961,53.391,22,60,22z"
+            opacity=".35"
+          ></path>
+          <path
+            fill="#a4e2f1"
+            d="M60,108c-12.991,0-20-24.731-20-48s7.009-48,20-48s20,24.731,20,48S72.991,108,60,108z M60,18 c-6.609,0-14,17.961-14,42s7.391,42,14,42s14-17.961,14-42S66.609,18,60,18z"
+          ></path>
+          <rect width="89" height="6" x="15" y="61" opacity=".35"></rect>
+          <rect width="89" height="6" x="15" y="57" fill="#a4e2f1"></rect>
+          <path
+            d="M30.905,96.113l-4.258-4.228C35.537,82.931,47.382,78,60,78c12.554,0,24.357,4.889,33.234,13.766l-4.242,4.242 C81.248,88.265,70.952,84,60,84C48.993,84,38.66,88.302,30.905,96.113z"
+            opacity=".35"
+          ></path>
+          <path
+            fill="#a4e2f1"
+            d="M30.905,93.113l-4.258-4.228C35.537,79.931,47.382,75,60,75c12.554,0,24.357,4.889,33.234,13.766 l-4.242,4.242C81.248,85.265,70.952,81,60,81C48.993,81,38.66,85.302,30.905,93.113z"
+          ></path>
+          <path
+            d="M60,48c-12.617,0-24.461-4.931-33.352-13.884l4.258-4.228C38.662,37.699,48.994,42,60,42s21.339-4.301,29.094-12.112 l4.258,4.228C84.462,43.069,72.617,48,60,48z"
+            opacity=".35"
+          ></path>
+          <path
+            fill="#a4e2f1"
+            d="M60,45c-12.617,0-24.461-4.931-33.352-13.884l4.258-4.228C38.662,34.699,48.994,39,60,39 s21.339-4.301,29.094-12.112l4.258,4.228C84.462,40.069,72.617,45,60,45z"
+          ></path>
+          <path
+            fill="#a4e2f1"
+            d="M60,18c23.159,0,42,18.841,42,42s-18.841,42-42,42S18,83.159,18,60S36.841,18,60,18 M60,12 c-26.51,0-48,21.49-48,48s21.49,48,48,48s48-21.49,48-48S86.51,12,60,12L60,12z"
+          ></path>
+          <polygon
+            fill="#9500ba"
+            points="112.313,86.466 82.187,69 86.289,103.581 93.451,94.63 102.243,108 110.05,102.866 101.258,89.496"
+          ></polygon>
+        </svg>
+      </a>
+    </div>
+    <p>
+      Connect with author on LinkedIn :
+      <a
+        href="https://www.linkedin.com/in/kritikaadhikari/"
+        target="_blank"
+        style="
+          color: #0073b1;
+          text-decoration: underline;
+          word-break: break-all;
+        "
+        >https://www.linkedin.com/in/kritikaadhikari/</a
+      >
+    </p>
+    <button id="autoApplyBtn">Auto Apply</button>
+    <button id="refreshBtn">Refresh</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
